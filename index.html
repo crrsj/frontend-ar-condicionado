@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./script.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="./formulario.html">Realizar Orçamento</a></li>
+                <li><a href="#">Consultar Orçamentos</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Aracaju Manutenção em Ar-condicionados</h1>
+        <section class="card-container">
+            <div class="card">
+                <img src="https://engehall.com.br/wp-content/uploads/2024/02/LIMPEZA-DE-AR-CONDICIONADO-1024x683.webp" alt="Product 1">
+                <h2>Limpeza</h2>
+                <h5>À patrir de:</h5>
+                <p class="price">R$99.99</p>
+                <button onclick="mudarPagina()">Orçamento</button>
+            </div>
+            <div class="card">
+                <img src="https://sebrae.com.br/Sebrae/Portal%20Sebrae/Ideias%20de%20Negocio/Importer/Images/339_background.webp" alt="Product 2">
+                <h2>Manutenção</h2>                               
+                <h5>À patrir de:</h5>
+                <p class="price">R$149.99</p>
+                <button>Orçamento</button>
+            </div>           
+            <div class="card">
+                <img src="https://www.produttivo.com.br/blog/wp-content/uploads/2021/11/como-instalar-ar-condicionado.jpg" alt="Product 3">
+                <h2>Instalação</h2>
+                <h5>Á patrir de:</h5>
+                <p class="price">R$199.99</p>
+                <button>Orçamento</button>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="Product 3">
+                <h2>Consultoria</h2>
+                <h5>À patrir de:</h5>
+                <p class="price">R$200</p>
+                <button>Orçamento</button>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+<script src="./script.js"></script> 
+
+</html>
