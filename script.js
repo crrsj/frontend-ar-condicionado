@@ -333,7 +333,7 @@ async function updateUserData() {
     }
 
     try {
-        const url = `http://localhost:8080/ar?nome=${encodeURIComponent(nome)}`; // URL com filtro pelo nome
+        const url = `http://localhost:8080/ar/buscarNome?nome=${encodeURIComponent(nome)}`; // URL com filtro pelo nome
         const response = await fetch(url, {
             method: 'GET',
             headers: {
